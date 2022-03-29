@@ -1,25 +1,11 @@
 import { useEffect } from "preact/hooks";
 import Reveal from "reveal.js";
-import Markdown from "reveal.js/plugin/markdown/markdown.esm.js";
-// Image
-import FVote from "./Assets/IMG/Global/f-vote.jpg";
-import P2Frise from "./Assets/IMG/Part2/frise.jpg";
-import P2Cresson from "./Assets/IMG/Part2/cresson.jpg";
-import P2Simone from "./Assets/IMG/Part2/simone.jpg";
-import P2Florence from "./Assets/IMG/Part2/florenceparly.jpg";
-import P2Olympe from "./Assets/IMG/Part2/Olympe.png";
-import P2Nicole from "./Assets/IMG/Part2/nicolebelloubet.jpg";
-import P2Segolene from "./Assets/IMG/Part2/Segolene.jpg";
-import P2Ref1 from "./Assets/IMG/Part2/ref1.jpg";
-import P2Ref2 from "./Assets/IMG/Part2/ref2.jpg";
-import EcoleEgalite from "./Assets/IMG/Part1/écoleégalité.jpg";
-import ANBefore from "./Assets/IMG/Part2/AN-Before.jpg";
-import ANAfter from "./Assets/IMG/Part2/AN-After.jpg";
+import Zoom from "reveal.js/plugin/zoom/zoom.esm.js";
 
 export function App() {
   useEffect(() => {
     const deck = new Reveal({
-      plugins: [Markdown],
+      plugins: [Zoom],
     });
     deck.initialize();
   }, []);
@@ -28,7 +14,7 @@ export function App() {
     <main class="slides">
       {/* Intro */}
       <section id="Slide1">
-        <img src={FVote} alt="" />
+        <img src="/IMG/Global/f-vote.jpeg" alt="" />
         <div>
           <h3>Promotion de l'égalité H-F</h3>
           <p>
@@ -63,7 +49,7 @@ export function App() {
       <section id="Slide3">
         <section id="Slide3-1">
           <h2 class="underline title r-fit-text">Dans les Études</h2>
-          <img src={EcoleEgalite} alt="" width={450} />
+          <img src="/IMG/Part1/écoleégalité.jpeg" alt="" width={450} />
         </section>
         <section id="Slide3-2"></section>
       </section>
@@ -74,55 +60,58 @@ export function App() {
           </h2>
           <div>
             <div>
-              <img src={ANBefore} alt="" />
+              <img src="/IMG/Part2/AN-Before.jpeg" alt="" />
               <p>Assamble National Avant</p>
             </div>
             <div>
-              <img src={ANAfter} alt="" />
+              <img src="/IMG/Part2/AN-After.jpeg" alt="" />
               <p>Assamble National Aujourd'hui</p>
             </div>
           </div>
         </section>
         <section id="Slide4-2">
-          <img src={P2Frise} alt="" width={800} />
+          <img src="/IMG/Part2/frise.jpeg" alt="" width={800} />
         </section>
         <section id="Slide4-3">
           <div>
-            <img src={P2Olympe} alt="" />
+            <img src="/IMG/Part2/Olympe.png" alt="" />
             <p>Marie Gouges</p>
           </div>
           <div>
-            <img src={P2Cresson} alt="" />
+            <img src="/IMG/Part2/cresson.jpeg" alt="" />
             <p>Édith Cresson</p>
           </div>
           <div>
-            <img src={P2Segolene} alt="" />
+            <img src="/IMG/Part2/Segolene.jpeg" alt="" />
             <p>Ségolène Royal</p>
           </div>
           <div>
-            <img src={P2Simone} alt="" />
+            <img src="/IMG/Part2/simone.jpeg" alt="" />
             <p>Simone Veil</p>
           </div>
         </section>
         <section id="Slide4-4">
-          <img src={P2Ref1} alt="" width={450} />
+          <img src="/IMG/Part2/ref1.jpeg" alt="" width={450} />
         </section>
         <section id="Slide4-5">
-          <img src={P2Ref2} alt="" width={500} />
+          <img src="/IMG/Part2/ref2.jpeg" alt="" width={500} />
         </section>
         <section id="Slide4-6">
           <div>
-            <img src={P2Florence} alt="" />
+            <img src="/IMG/Part2/florenceparly.jpeg" alt="" />
             <p>Florence Parly (Ministre Défence)</p>
           </div>
           <div>
-            <img src={P2Nicole} alt="" />
+            <img src="/IMG/Part2/nicolebelloubet.jpeg" alt="" />
             <p>Nicole Belloubet</p>
           </div>
         </section>
       </section>
       <section id="Slide5">
-        <h2 class="underline title">Part 3:</h2>
+        <section id="Slide5-1">
+          <h2 class="underline title r-fit-text">Inégalités Sociales</h2>
+        </section>
+        <section id="Slide5-2"></section>
       </section>
     </main>
   );
