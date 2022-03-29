@@ -47,6 +47,10 @@
   margin-right: 5px;
 }
 
+#Slide2 ol {
+  font-size: 2rem;
+}
+
 #Slide3 ol,
 #Slide4 ol {
   font-size: 2rem;
@@ -54,15 +58,47 @@
   list-style: lower-latin;
 }
 
-#Slide4 #Slide4-3 {
+#Slide4 #Slide4-1 > div {
   display: -ms-grid !important;
   display: grid !important;
-  -ms-grid-columns: (1fr)[3] !important;
-      grid-template-columns: repeat(3, 1fr) !important;
+  -ms-grid-columns: (1fr)[2] !important;
+      grid-template-columns: repeat(2, 1fr) !important;
   place-items: center !important;
 }
 
+#Slide4 #Slide4-1 > div p {
+  font-size: 1rem;
+}
+
+#Slide4 #Slide4-3 {
+  display: -ms-grid !important;
+  display: grid !important;
+  -ms-grid-columns: (1fr)[4] !important;
+      grid-template-columns: repeat(4, 1fr) !important;
+  place-items: center !important;
+}
+
+#Slide4 #Slide4-3 p {
+  font-size: 1rem;
+}
+
 #Slide4 #Slide4-3 img {
+  width: 200px;
+}
+
+#Slide4 #Slide4-6 {
+  display: -ms-grid !important;
+  display: grid !important;
+  -ms-grid-columns: (1fr)[2] !important;
+      grid-template-columns: repeat(2, 1fr) !important;
+  place-items: center !important;
+}
+
+#Slide4 #Slide4-6 p {
+  font-size: 1rem;
+}
+
+#Slide4 #Slide4-6 img {
   width: 200px;
 }
 /*# sourceMappingURL=Index.css.map */

@@ -13,6 +13,8 @@ import P2Segolene from "./Assets/IMG/Part2/Segolene.jpg";
 import P2Ref1 from "./Assets/IMG/Part2/ref1.jpg";
 import P2Ref2 from "./Assets/IMG/Part2/ref2.jpg";
 import EcoleEgalite from "./Assets/IMG/Part1/écoleégalité.jpg";
+import ANBefore from "./Assets/IMG/Part2/AN-Before.jpg";
+import ANAfter from "./Assets/IMG/Part2/AN-After.jpg";
 
 export function App() {
   useEffect(() => {
@@ -24,79 +26,99 @@ export function App() {
 
   return (
     <main class="slides">
+      {/* Intro */}
       <section id="Slide1">
         <img src={FVote} alt="" />
         <div>
           <h3>Promotion de l'égalité H-F</h3>
           <p>
             <small>
-              Par <a href="#">Dian</a>, <a href="#">Clotilde</a> et
+              Par <a href="#">Diane</a>, <a href="#">Clotilde</a> et
               <a href="#"> Arthur</a>
             </small>
           </p>
         </div>
       </section>
+      {/* Sommaire */}
       <section id="Slide2">
         <h2 class="underline title">Des inégalités:</h2>
         <ol>
-          <li class="fragment">
+          <li class="fragment fade-up">
             <a href="#/Slide3" className="bold no-link-style">
-              Dans les Études
+              Dans les Études, stéréotypes, parité dans les études...
             </a>
           </li>
-          <li class="fragment">
+          <li class="fragment fade-up">
             <a href="#/Slide4" className="bold no-link-style">
-              En politique
+              En politique, parité dans les partie politique...
             </a>
           </li>
-          <li class="fragment">
+          <li class="fragment fade-up">
             <a href="#/Slide5" className="bold no-link-style">
-              Dans le social
+              Dans le social, les Progrès et les problèmes...
             </a>
           </li>
         </ol>
       </section>
       <section id="Slide3">
-        <h2 class="underline title">Dans les Études</h2>
-        <ol>
-          <li>
-            <span className="bold">Stéréotype à l'école</span>, partié dans les
-            études scientifique/littéraire.
-          </li>
-          <li>
-            <span className="bold">Dans le domaine professionenel</span>:
-            salaire, responsabilité, parité dans les professions.
-          </li>
-        </ol>
-        <img src={EcoleEgalite} alt="" width={450} />
+        <section id="Slide3-1">
+          <h2 class="underline title r-fit-text">Dans les Études</h2>
+          <img src={EcoleEgalite} alt="" width={450} />
+        </section>
+        <section id="Slide3-2"></section>
       </section>
       <section id="Slide4">
         <section id="Slide4-1">
-          <h2 class="underline title">En Politique</h2>
-          <ol>
-            <li>
-              Partité Parties Politque, Assemblée National, Journée
-              International...
-            </li>
-            <li>
-              <span className="bold">Dans le domaine professionenel</span>:
-              salaire, responsabilité, parité dans les professions.
-            </li>
-          </ol>
+          <h2 class="underline title r-fit-text">
+            Parité Homme-Femme en politique
+          </h2>
+          <div>
+            <div>
+              <img src={ANBefore} alt="" />
+              <p>Assamble National Avant</p>
+            </div>
+            <div>
+              <img src={ANAfter} alt="" />
+              <p>Assamble National Aujourd'hui</p>
+            </div>
+          </div>
         </section>
         <section id="Slide4-2">
           <img src={P2Frise} alt="" width={800} />
         </section>
         <section id="Slide4-3">
-          <img src={P2Olympe} alt="" />
-          <img src={P2Cresson} alt="" />
-          <img src={P2Segolene} alt="" />
+          <div>
+            <img src={P2Olympe} alt="" />
+            <p>Marie Gouges</p>
+          </div>
+          <div>
+            <img src={P2Cresson} alt="" />
+            <p>Édith Cresson</p>
+          </div>
+          <div>
+            <img src={P2Segolene} alt="" />
+            <p>Ségolène Royal</p>
+          </div>
+          <div>
+            <img src={P2Simone} alt="" />
+            <p>Simone Veil</p>
+          </div>
         </section>
         <section id="Slide4-4">
           <img src={P2Ref1} alt="" width={450} />
         </section>
         <section id="Slide4-5">
           <img src={P2Ref2} alt="" width={500} />
+        </section>
+        <section id="Slide4-6">
+          <div>
+            <img src={P2Florence} alt="" />
+            <p>Florence Parly (Ministre Défence)</p>
+          </div>
+          <div>
+            <img src={P2Nicole} alt="" />
+            <p>Nicole Belloubet</p>
+          </div>
         </section>
       </section>
       <section id="Slide5">
