@@ -11,8 +11,8 @@ node_modules
 dist
 dist-ssr
 *.local
-/src/Assets/CSS/Index.scss
-/src/Assets/CSS/Index.css.map
+/src/CSS/Index.scss
+/src/CSS/Index.css.map
 
 # Editor directories and files
 .vscode/*

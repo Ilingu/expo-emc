@@ -1,8 +1,9 @@
+import { FunctionComponent } from "preact";
 import { useEffect } from "preact/hooks";
 import Reveal from "reveal.js";
 import Zoom from "reveal.js/plugin/zoom/zoom.esm.js";
 
-export function App() {
+const App: FunctionComponent = () => {
   useEffect(() => {
     const deck = new Reveal({
       plugins: [Zoom],
@@ -11,7 +12,7 @@ export function App() {
   }, []);
 
   return (
-    <main class="slides">
+    <main className="slides">
       {/* Intro */}
       <section id="Slide1">
         <img src="/IMG/Global/f-vote.jpeg" alt="" />
@@ -27,19 +28,19 @@ export function App() {
       </section>
       {/* Sommaire */}
       <section id="Slide2">
-        <h2 class="underline title">Des inégalités:</h2>
+        <h2 className="underline title">Des inégalités:</h2>
         <ol>
-          <li class="fragment fade-up">
+          <li className="fragment fade-up">
             <a href="#/Slide3" className="bold no-link-style">
               Dans les Études, stéréotypes, parité dans les études...
             </a>
           </li>
-          <li class="fragment fade-up">
+          <li className="fragment fade-up">
             <a href="#/Slide4" className="bold no-link-style">
               En politique, parité dans les partie politique...
             </a>
           </li>
-          <li class="fragment fade-up">
+          <li className="fragment fade-up">
             <a href="#/Slide5" className="bold no-link-style">
               Dans le social, les Progrès et les problèmes...
             </a>
@@ -48,14 +49,14 @@ export function App() {
       </section>
       <section id="Slide3">
         <section id="Slide3-1">
-          <h2 class="underline title r-fit-text">Dans les Études</h2>
+          <h2 className="underline title r-fit-text">Dans les Études</h2>
           <img src="/IMG/Part1/écoleégalité.jpeg" alt="" width={450} />
         </section>
         <section id="Slide3-2"></section>
       </section>
       <section id="Slide4">
         <section id="Slide4-1">
-          <h2 class="underline title r-fit-text">
+          <h2 className="underline title r-fit-text">
             Parité Homme-Femme en politique
           </h2>
           <div>
@@ -109,10 +110,27 @@ export function App() {
       </section>
       <section id="Slide5">
         <section id="Slide5-1">
-          <h2 class="underline title r-fit-text">Inégalités Sociales</h2>
+          <h2 className="underline title r-fit-text">Inégalités Sociales</h2>
         </section>
         <section id="Slide5-2"></section>
       </section>
+      <section id="Slide6">
+        <h3 className="underline title">Une petite vidéo?</h3>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube-nocookie.com/embed/eAQAN2assMw?start=648"
+          title="VIDEO: Inégalité des sexes #DATAGUEULE"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      </section>
+      <section id="Slide6">
+        <h2 className="underline title">Conclusion:</h2>
+      </section>
     </main>
   );
-}
+};
+
+export default App;
