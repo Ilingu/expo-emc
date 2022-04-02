@@ -21,7 +21,7 @@ const App: FunctionComponent = () => {
       <section id="Slide1">
         <img data-src="/IMG/Global/f-vote.jpeg" alt="" />
         <div>
-          <h3>Promotion de l'égalité Homme-Femme</h3>
+          <h3>Promotion de l'égalité Hommes-Femmes</h3>
           <p>
             <small>
               Par <a href="#">Diane</a>, <a href="#">Clotilde</a> et
@@ -43,29 +43,60 @@ const App: FunctionComponent = () => {
           </li>
           <li className="fragment fade-up">
             <a href="#/Slide4" className="bold no-link-style">
-              La parité homme femme en politique
+              La parité Hommes-Femmes en politique
             </a>
           </li>
           <li className="fragment fade-up">
             <a href="#/Slide5" className="bold no-link-style">
-              L'évolution de l'égalité homme-femme dans le domaine social
+              L'évolution de l'égalité Hommes-Femmes dans le domaine social
             </a>
           </li>
         </ol>
       </section>
       <section id="Slide3">
-        <section id="Slide3-1">
+        <section id="Slide3-intro">
           <h2 className="underline title">
             1. Inégalité dans les études et monde professionel
           </h2>
           <img data-src="/IMG/Part1/écoleégalité.jpeg" alt="" width={450} />
         </section>
-        <section id="Slide3-2"></section>
+        <section id="Slide3-catalogue">
+          <div>
+            <img data-src="/IMG/Part1/catalogue-fille.png" alt="" />
+            <p>Catalogue Fille</p>
+          </div>
+          <div>
+            <img data-src="/IMG/Part1/catalogue-garcon.png" alt="" />
+            <p>Catalogue Garçon</p>
+          </div>
+          <div>
+            <img data-src="/IMG/Part1/catalogue-mix.png" alt="" />
+            <p>Catalogue Mix</p>
+          </div>
+        </section>
+        <section id="Slide3-graph">
+          <img data-src="/IMG/Part1/metier-mixite.png" alt="" />
+          <img data-src="/IMG/Part1/f-enseignement-sup.png" alt="" />
+        </section>
+        <section id="Slide3-oui-non">
+          <div className="r-stack">
+            <p className="fragment fade-out" data-fragment-index="0">
+              Les ingénieur(e)s et les cadres de l'industrie 25% de femmes
+            </p>
+            <p className="fragment current-visible" data-fragment-index="0">
+              La construction et les travaux publics 19% de femmes
+            </p>
+            <div className="fragment fade-in">
+              <p>Dans l'armée, la police, les pompiers 14% de femmes</p>
+              <img data-src="/IMG/Part1/f-travail-gratuit.png" alt="" />
+            </div>
+          </div>
+        </section>
       </section>
       <section id="Slide4">
         <section id="Slide4-intro">
           <h2 className="underline title">
-            2. Parité Homme-Femme en politique
+            2. Parité Hommes-Femmes en politique
           </h2>
         </section>
         <section id="Slide4-personne">
@@ -145,11 +176,18 @@ const App: FunctionComponent = () => {
             width={800}
           />
         </section>
+        <section id="Slide4-conclu">
+          <div>
+            <img data-src="/IMG/Part2/parite-pas-gagne.jpeg" alt="" />
+            <img data-src="/IMG/Part2/parite-pas-gagne2.jpeg" alt="" />
+          </div>
+          <p>La parité Hommes-Femmes est encore loin...</p>
+        </section>
       </section>
       <section id="Slide5">
         <section id="Slide5-1">
           <h2 className="underline title">
-            3. Évolution égalité Homme Femme dans le social
+            3. Évolution égalité Hommes-Femmes dans le social
           </h2>
           <img data-src="/IMG/Part3/manif-feministe.jpg" alt="" width={500} />
         </section>

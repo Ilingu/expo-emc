@@ -86,11 +86,32 @@
   font-weight: bold;
 }
 
-#Slide3 ol,
-#Slide4 ol {
-  font-size: 2rem;
-  text-align: justify;
-  list-style: lower-latin;
+#Slide3 #Slide3-catalogue {
+  display: -ms-grid !important;
+  display: grid !important;
+  -ms-grid-columns: (1fr)[2] !important;
+      grid-template-columns: repeat(2, 1fr) !important;
+  place-items: center !important;
+}
+
+#Slide3 #Slide3-catalogue p {
+  font-size: 1rem;
+}
+
+#Slide3 #Slide3-catalogue div p {
+  margin-top: -5%;
+}
+
+#Slide3 #Slide3-graph {
+  display: -ms-grid !important;
+  display: grid !important;
+  -ms-grid-columns: (1fr)[2] !important;
+      grid-template-columns: repeat(2, 1fr) !important;
+  place-items: center !important;
+}
+
+#Slide3 #Slide3-graph p {
+  font-size: 1rem;
 }
 
 #Slide4 #Slide4-personne {
@@ -146,6 +167,18 @@
 }
 
 #Slide4 #Slide4-miniconclu #gouv-mitterand-macron p {
+  font-size: 1rem;
+}
+
+#Slide4 #Slide4-conclu > div {
+  display: -ms-grid !important;
+  display: grid !important;
+  -ms-grid-columns: (1fr)[2] !important;
+      grid-template-columns: repeat(2, 1fr) !important;
+  place-items: center !important;
+}
+
+#Slide4 #Slide4-conclu > div p {
   font-size: 1rem;
 }
 

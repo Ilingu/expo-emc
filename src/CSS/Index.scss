@@ -81,12 +81,17 @@
   }
 }
 
-#Slide3,
-#Slide4 {
-  ol {
-    font-size: 2rem;
-    text-align: justify;
-    list-style: lower-latin;
+#Slide3 {
+  #Slide3-catalogue {
+    @include gridTemplate(2);
+    div {
+      p {
+        margin-top: -5%;
+      }
+    }
+  }
+  #Slide3-graph {
+    @include gridTemplate(2);
   }
 }
 
@@ -123,6 +128,12 @@
 
   #Slide4-miniconclu {
     #gouv-mitterand-macron {
+      @include gridTemplate(2);
+    }
+  }
+
+  #Slide4-conclu {
+    > div {
       @include gridTemplate(2);
     }
   }
