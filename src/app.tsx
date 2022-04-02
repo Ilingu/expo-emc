@@ -1,14 +1,18 @@
 import { FunctionComponent } from "preact";
-import { useEffect } from "preact/hooks";
+import { useEffect, useState } from "preact/hooks";
 import Reveal from "reveal.js";
 import Zoom from "reveal.js/plugin/zoom/zoom.esm.js";
 
 const App: FunctionComponent = () => {
+  const [IframeError, setIframeError] = useState(false);
+
   useEffect(() => {
     const deck = new Reveal({
       plugins: [Zoom],
     });
     deck.initialize();
+
+    return deck.destroy;
   }, []);
 
   return (
@@ -108,6 +112,35 @@ const App: FunctionComponent = () => {
         <section id="Slide4-femme-eu">
           <img data-src="/IMG/Part2/ref1.jpeg" alt="" width={450} />
         </section>
+        <section id="Slide4-miniconclu">
+          <div className="r-stack">
+            <p className="fragment fade-out" data-fragment-index="0">
+              Parité au sens strict: <span className="title bold">NON!</span>
+            </p>
+            <p className="fragment current-visible" data-fragment-index="0">
+              Parité dans les ministères:{" "}
+              <span className="title bold">NON!</span>
+            </p>
+            <div className="fragment fade-in">
+              <p>
+                Progrès réalisés:{" "}
+                <span className="bold" style={{ color: "#6ab04c" }}>
+                  OUI!
+                </span>
+              </p>
+              <div id="gouv-mitterand-macron">
+                <div>
+                  <img src="/IMG/Part2/gouv-mitterand.jpeg" alt="" />
+                  <p>Gouvernement Mitterand</p>
+                </div>
+                <div>
+                  <img src="/IMG/Part2/gouv-macron.jpeg" alt="" />
+                  <p>Gouvernement Macron</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         <section id="Slide4-6">
           <div>
             <img data-src="/IMG/Part2/florenceparly.jpeg" alt="" />
@@ -126,19 +159,36 @@ const App: FunctionComponent = () => {
         <section id="Slide5-2"></section>
       </section>
       <section id="Slide6">
-        <h3 className="underline title">Une petite vidéo?</h3>
-        <iframe
-          width="560"
-          height="315"
-          data-src="https://www.youtube-nocookie.com/embed/eAQAN2assMw?start=648"
-          title="VIDEO: Inégalité des sexes #DATAGUEULE"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
+        <h3 className="underline title" onDblClick={() => setIframeError(true)}>
+          Une petite vidéo?
+        </h3>
+        {IframeError || (
+          <iframe
+            width="560"
+            height="315"
+            data-src="https://www.youtube-nocookie.com/embed/eAQAN2assMw?start=648"
+            title="VIDEO: Inégalité des sexes #DATAGUEULE"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        )}
+
+        {IframeError && (
+          <a
+            href="https://www.youtube.com/watch?v=eAQAN2assMw&t=648s"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Video Link
+          </a>
+        )}
       </section>
       <section id="Slide6">
         <h2 className="underline title">Conclusion:</h2>
+      </section>
+      <section id="Slide7">
+        <h2 className="underline title">Ouverture:</h2>
       </section>
     </main>
   );

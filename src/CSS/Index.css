@@ -137,6 +137,18 @@
   color: #f9ca24;
 }
 
+#Slide4 #Slide4-miniconclu #gouv-mitterand-macron {
+  display: -ms-grid !important;
+  display: grid !important;
+  -ms-grid-columns: (1fr)[2] !important;
+      grid-template-columns: repeat(2, 1fr) !important;
+  place-items: center !important;
+}
+
+#Slide4 #Slide4-miniconclu #gouv-mitterand-macron p {
+  font-size: 1rem;
+}
+
 #Slide4 #Slide4-6 {
   display: -ms-grid !important;
   display: grid !important;

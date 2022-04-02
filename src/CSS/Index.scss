@@ -121,6 +121,12 @@
     }
   }
 
+  #Slide4-miniconclu {
+    #gouv-mitterand-macron {
+      @include gridTemplate(2);
+    }
+  }
+
   #Slide4-6 {
     @include gridTemplate(2);
     img {
