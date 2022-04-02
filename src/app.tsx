@@ -15,9 +15,9 @@ const App: FunctionComponent = () => {
     <main className="slides">
       {/* Intro */}
       <section id="Slide1">
-        <img src="/IMG/Global/f-vote.jpeg" alt="" />
+        <img data-src="/IMG/Global/f-vote.jpeg" alt="" />
         <div>
-          <h3>Promotion de l'égalité H-F</h3>
+          <h3>Promotion de l'égalité Homme-Femme</h3>
           <p>
             <small>
               Par <a href="#">Diane</a>, <a href="#">Clotilde</a> et
@@ -28,82 +28,93 @@ const App: FunctionComponent = () => {
       </section>
       {/* Sommaire */}
       <section id="Slide2">
-        <h2 className="underline title">Des inégalités:</h2>
-        <ol>
+        <img data-src="/IMG/Global/feminisme.jpeg" alt="" />
+        <h2 className="underline title">Sommaire:</h2>
+        <ol className="justify">
           <li className="fragment fade-up">
             <a href="#/Slide3" className="bold no-link-style">
-              Dans les Études, stéréotypes, parité dans les études...
+              Les inégalité entre les hommes et les femmes dans les études et
+              dans le monde professionnel
             </a>
           </li>
           <li className="fragment fade-up">
             <a href="#/Slide4" className="bold no-link-style">
-              En politique, parité dans les partie politique...
+              La parité homme femme en politique
             </a>
           </li>
           <li className="fragment fade-up">
             <a href="#/Slide5" className="bold no-link-style">
-              Dans le social, les Progrès et les problèmes...
+              L'évolution de l'égalité homme-femme dans le domaine social
             </a>
           </li>
         </ol>
       </section>
       <section id="Slide3">
         <section id="Slide3-1">
-          <h2 className="underline title r-fit-text">Dans les Études</h2>
-          <img src="/IMG/Part1/écoleégalité.jpeg" alt="" width={450} />
+          <h2 className="underline title">
+            1. Inégalité dans les études et monde professionel
+          </h2>
+          <img data-src="/IMG/Part1/écoleégalité.jpeg" alt="" width={450} />
         </section>
         <section id="Slide3-2"></section>
       </section>
       <section id="Slide4">
-        <section id="Slide4-1">
-          <h2 className="underline title r-fit-text">
-            Parité Homme-Femme en politique
+        <section id="Slide4-intro">
+          <h2 className="underline title">
+            2. Parité Homme-Femme en politique
           </h2>
+        </section>
+        <section id="Slide4-personne">
           <div>
-            <div>
-              <img src="/IMG/Part2/AN-Before.jpeg" alt="" />
-              <p>Assamble National Avant</p>
+            <img data-src="/IMG/Part2/Olympe.png" alt="" />
+            <p>Olympe de Gouges (1793)</p>
+          </div>
+          <div>
+            <img data-src="/IMG/Part2/simone.jpeg" alt="" />
+            <p>Simone Veil (1975)</p>
+          </div>
+          <div>
+            <img data-src="/IMG/Part2/cresson.jpeg" alt="" />
+            <p>Édith Cresson (1991)</p>
+          </div>
+          <div>
+            <img data-src="/IMG/Part2/Segolene.jpeg" alt="" />
+            <p>Ségolène Royal (2007)</p>
+          </div>
+        </section>
+        <section id="Slide4-podium-box">
+          <div id="podium-third-step" className="pod-child">
+            <img data-src="/IMG/Part2/logo-eco-inde.png" alt="" />
+            <div className="pod-placeholder">
+              Alliance Ecologique Indépendante - <span>55 000 €</span>
             </div>
-            <div>
-              <img src="/IMG/Part2/AN-After.jpeg" alt="" />
-              <p>Assamble National Aujourd'hui</p>
+          </div>
+          <div id="podium-second-step" className="pod-child">
+            <img data-src="/IMG/Part2/logo-france-insoumise.png" alt="" />
+            <div className="pod-placeholder">
+              France Insoumise - <span>250 000 €</span>
+            </div>
+          </div>
+          <div id="podium-first-step" className="pod-child">
+            <img data-src="/IMG/Part2/logo-republicain.png" alt="" />
+            <div className="pod-placeholder">
+              Les Républicains - <span>1.78M €</span>
             </div>
           </div>
         </section>
-        <section id="Slide4-2">
-          <img src="/IMG/Part2/frise.jpeg" alt="" width={800} />
+        <section id="Slide4-AN-femme">
+          <img data-src="/IMG/Part2/ref2.jpeg" alt="" width={500} />
         </section>
-        <section id="Slide4-3">
-          <div>
-            <img src="/IMG/Part2/Olympe.png" alt="" />
-            <p>Marie Gouges</p>
-          </div>
-          <div>
-            <img src="/IMG/Part2/cresson.jpeg" alt="" />
-            <p>Édith Cresson</p>
-          </div>
-          <div>
-            <img src="/IMG/Part2/Segolene.jpeg" alt="" />
-            <p>Ségolène Royal</p>
-          </div>
-          <div>
-            <img src="/IMG/Part2/simone.jpeg" alt="" />
-            <p>Simone Veil</p>
-          </div>
-        </section>
-        <section id="Slide4-4">
-          <img src="/IMG/Part2/ref1.jpeg" alt="" width={450} />
-        </section>
-        <section id="Slide4-5">
-          <img src="/IMG/Part2/ref2.jpeg" alt="" width={500} />
+        <section id="Slide4-femme-eu">
+          <img data-src="/IMG/Part2/ref1.jpeg" alt="" width={450} />
         </section>
         <section id="Slide4-6">
           <div>
-            <img src="/IMG/Part2/florenceparly.jpeg" alt="" />
+            <img data-src="/IMG/Part2/florenceparly.jpeg" alt="" />
             <p>Florence Parly (Ministre Défence)</p>
           </div>
           <div>
-            <img src="/IMG/Part2/nicolebelloubet.jpeg" alt="" />
+            <img data-src="/IMG/Part2/nicolebelloubet.jpeg" alt="" />
             <p>Nicole Belloubet</p>
           </div>
         </section>
@@ -119,7 +130,7 @@ const App: FunctionComponent = () => {
         <iframe
           width="560"
           height="315"
-          src="https://www.youtube-nocookie.com/embed/eAQAN2assMw?start=648"
+          data-src="https://www.youtube-nocookie.com/embed/eAQAN2assMw?start=648"
           title="VIDEO: Inégalité des sexes #DATAGUEULE"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

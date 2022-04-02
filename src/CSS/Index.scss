@@ -1,0 +1,130 @@
+/* OnPrint */
+@media print {
+  html {
+    display: none;
+  }
+}
+
+@mixin gridTemplate($size) {
+  display: grid !important;
+  grid-template-columns: repeat($size, 1fr) !important;
+  place-items: center !important;
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+/* HoverHoverit */
+::selection {
+  background-color: white !important;
+  color: black !important;
+}
+
+/* General */
+.underline {
+  text-decoration: underline !important;
+}
+.title {
+  color: rgb(177, 61, 61) !important;
+}
+.bold {
+  font-weight: bold !important;
+}
+.justify {
+  text-align: justify !important;
+}
+.center {
+  text-align: center !important;
+}
+.no-link-style {
+  text-decoration: none !important;
+  color: #fff !important;
+}
+
+#Slide1 {
+  display: flex !important;
+  align-items: center;
+  img {
+    width: 300px;
+    margin-right: 5px;
+  }
+}
+
+#Slide2 {
+  img {
+    position: absolute;
+    width: 200px;
+    left: -20%;
+    top: -50%;
+  }
+  @media screen and (max-width: 1400px) {
+    img {
+      left: 0%;
+      top: -70%;
+    }
+  }
+
+  ol {
+    font-size: 2rem;
+    counter-reset: item;
+    li {
+      display: block;
+      margin-top: 5px;
+    }
+    li:before {
+      content: counter(item) ". ";
+      counter-increment: item;
+      color: rgb(177, 61, 61);
+      font-weight: bold;
+    }
+  }
+}
+
+#Slide3,
+#Slide4 {
+  ol {
+    font-size: 2rem;
+    text-align: justify;
+    list-style: lower-latin;
+  }
+}
+
+#Slide4 {
+  #Slide4-personne {
+    @include gridTemplate(4);
+    img {
+      width: 200px;
+    }
+  }
+
+  #Slide4-podium-box {
+    transform: rotate(180deg);
+    width: 93.6%;
+    .pod-child {
+      margin: 0 auto;
+      display: inline-block;
+      transform: rotate(180deg);
+      margin-right: 1rem;
+      img {
+        width: 200px;
+      }
+    }
+
+    .pod-placeholder {
+      font-size: 1.5rem;
+      max-width: 300px;
+      span {
+        font-weight: bold;
+        color: #f9ca24;
+      }
+    }
+  }
+
+  #Slide4-6 {
+    @include gridTemplate(2);
+    img {
+      width: 200px;
+    }
+  }
+}

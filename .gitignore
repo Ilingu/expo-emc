@@ -11,7 +11,6 @@ node_modules
 dist
 dist-ssr
 *.local
-/src/CSS/Index.scss
 /src/CSS/Index.css.map
 
 # Editor directories and files
