@@ -88,9 +88,11 @@ const App: FunctionComponent = () => {
             </p>
             <div className="fragment fade-in">
               <p>Dans l'armée, la police, les pompiers 14% de femmes</p>
-              <img data-src="/IMG/Part1/f-travail-gratuit.png" alt="" />
             </div>
           </div>
+        </section>
+        <section id="Slide3-finale">
+          <img data-src="/IMG/Part1/f-travail-gratuit.png" alt="" width={800} />
         </section>
       </section>
       <section id="Slide4">
