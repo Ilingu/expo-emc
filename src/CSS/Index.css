@@ -149,7 +149,7 @@
   font-size: 1rem;
 }
 
-#Slide4 #Slide4-6 {
+#Slide5 #Slide5-metoo {
   display: -ms-grid !important;
   display: grid !important;
   -ms-grid-columns: (1fr)[2] !important;
@@ -157,11 +157,7 @@
   place-items: center !important;
 }
 
-#Slide4 #Slide4-6 p {
+#Slide5 #Slide5-metoo p {
   font-size: 1rem;
-}
-
-#Slide4 #Slide4-6 img {
-  width: 200px;
 }
 /*# sourceMappingURL=Index.css.map */

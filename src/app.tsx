@@ -107,10 +107,7 @@ const App: FunctionComponent = () => {
           </div>
         </section>
         <section id="Slide4-AN-femme">
-          <img data-src="/IMG/Part2/ref2.jpeg" alt="" width={500} />
-        </section>
-        <section id="Slide4-femme-eu">
-          <img data-src="/IMG/Part2/ref1.jpeg" alt="" width={450} />
+          <img data-src="/IMG/Part2/an-femme.jpeg" alt="" width={500} />
         </section>
         <section id="Slide4-miniconclu">
           <div className="r-stack">
@@ -130,39 +127,97 @@ const App: FunctionComponent = () => {
               </p>
               <div id="gouv-mitterand-macron">
                 <div>
-                  <img src="/IMG/Part2/gouv-mitterand.jpeg" alt="" />
+                  <img data-src="/IMG/Part2/gouv-mitterand.jpeg" alt="" />
                   <p>Gouvernement Mitterand</p>
                 </div>
                 <div>
-                  <img src="/IMG/Part2/gouv-macron.jpeg" alt="" />
+                  <img data-src="/IMG/Part2/gouv-macron.jpeg" alt="" />
                   <p>Gouvernement Macron</p>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <section id="Slide4-6">
-          <div>
-            <img data-src="/IMG/Part2/florenceparly.jpeg" alt="" />
-            <p>Florence Parly (Ministre Défence)</p>
-          </div>
-          <div>
-            <img data-src="/IMG/Part2/nicolebelloubet.jpeg" alt="" />
-            <p>Nicole Belloubet</p>
-          </div>
+        <section id="Slide4-ministere">
+          <img
+            data-src="/IMG/Part2/ministere-egalite-h-f.svg"
+            alt=""
+            width={800}
+          />
         </section>
       </section>
       <section id="Slide5">
         <section id="Slide5-1">
-          <h2 className="underline title r-fit-text">Inégalités Sociales</h2>
+          <h2 className="underline title">
+            3. Évolution égalité Homme Femme dans le social
+          </h2>
+          <img data-src="/IMG/Part3/manif-feministe.jpg" alt="" width={500} />
         </section>
-        <section id="Slide5-2"></section>
+        <section id="Slide5-metoo">
+          <img data-src="/IMG/Part3/wecandoit.jpg" alt="" />
+          <img data-src="/IMG/Part3/balancetonporc.jpg" alt="" />
+          <blockquote
+            style={{ visibility: "hidden" }}
+            className="twitter-tweet"
+            data-lang="en"
+            data-theme="dark"
+          >
+            <p lang="en" dir="ltr">
+              To all the women sharing stories of sexual assault and sexual
+              harassment, thank you for your bravery to speak up. You are not
+              alone.{" "}
+              <a href="https://twitter.com/hashtag/MeToo?src=hash&amp;ref_src=twsrc%5Etfw">
+                #MeToo
+              </a>
+            </p>
+            &mdash; Women&#39;s March (@womensmarch){" "}
+            <a href="https://twitter.com/womensmarch/status/919705604075216896?ref_src=twsrc%5Etfw">
+              October 15, 2017
+            </a>
+          </blockquote>
+          <blockquote
+            style={{ visibility: "hidden" }}
+            className="twitter-tweet"
+            data-lang="en"
+            data-theme="dark"
+          >
+            <p lang="en" dir="ltr">
+              Reminder that if a woman didn&#39;t post{" "}
+              <a href="https://twitter.com/hashtag/MeToo?src=hash&amp;ref_src=twsrc%5Etfw">
+                #MeToo
+              </a>
+              , it doesn&#39;t mean she wasn&#39;t sexually assaulted or
+              harassed. Survivors don&#39;t owe you their story.
+            </p>
+            &mdash; Alexis Benveniste (@apbenven){" "}
+            <a href="https://twitter.com/apbenven/status/919902089110872064?ref_src=twsrc%5Etfw">
+              October 16, 2017
+            </a>
+          </blockquote>
+          <script
+            async
+            src="https://platform.twitter.com/widgets.js"
+            charSet="utf-8"
+          ></script>
+        </section>
       </section>
       <section id="Slide6">
+        <h2 className="underline title">Conclusion:</h2>
+      </section>
+      <section id="Slide7">
         <h3 className="underline title" onDblClick={() => setIframeError(true)}>
           Une petite vidéo?
         </h3>
-        {IframeError || (
+
+        {IframeError ? (
+          <a
+            href="https://www.youtube.com/watch?v=eAQAN2assMw&t=648s"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Video Link
+          </a>
+        ) : (
           <iframe
             width="560"
             height="315"
@@ -173,21 +228,8 @@ const App: FunctionComponent = () => {
             allowFullScreen
           ></iframe>
         )}
-
-        {IframeError && (
-          <a
-            href="https://www.youtube.com/watch?v=eAQAN2assMw&t=648s"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Video Link
-          </a>
-        )}
       </section>
-      <section id="Slide6">
-        <h2 className="underline title">Conclusion:</h2>
-      </section>
-      <section id="Slide7">
+      <section id="Slide8">
         <h2 className="underline title">Ouverture:</h2>
       </section>
     </main>
