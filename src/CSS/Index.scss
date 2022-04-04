@@ -144,3 +144,12 @@
     @include gridTemplate(2);
   }
 }
+
+#Slide8 {
+  > div {
+    @include gridTemplate(2);
+  }
+  img {
+    width: 300px;
+  }
+}

@@ -81,14 +81,23 @@ const App: FunctionComponent = () => {
         <section id="Slide3-oui-non">
           <div className="r-stack">
             <p className="fragment fade-out" data-fragment-index="0">
-              Les ingénieur(e)s et les cadres de l'industrie 25% de femmes
+              Les ingénieur(e)s et les cadres de l'industrie:{" "}
+              <samp className="bold" style={{ color: "#f9ca24" }}>
+                25% de femmes
+              </samp>
             </p>
             <p className="fragment current-visible" data-fragment-index="0">
-              La construction et les travaux publics 19% de femmes
+              La construction et les travaux publics:{" "}
+              <samp className="bold" style={{ color: "#f9ca24" }}>
+                19% de femmes
+              </samp>
             </p>
-            <div className="fragment fade-in">
-              <p>Dans l'armée, la police, les pompiers 14% de femmes</p>
-            </div>
+            <p className="fragment fade-in">
+              Dans l'armée, la police, les pompiers:{" "}
+              <samp className="bold" style={{ color: "#f9ca24" }}>
+                14% de femmes
+              </samp>
+            </p>
           </div>
         </section>
         <section id="Slide3-finale">
@@ -243,6 +252,17 @@ const App: FunctionComponent = () => {
       </section>
       <section id="Slide6">
         <h2 className="underline title">Conclusion:</h2>
+        <div>
+          <p>
+            Améliorations:{" "}
+            <span className="bold" style={{ color: "#6ab04c" }}>
+              OUI!
+            </span>
+          </p>
+          <p>
+            Fin des inégalités: <span className="bold title">NON!</span>
+          </p>
+        </div>
       </section>
       <section id="Slide7">
         <h3 className="underline title" onDblClick={() => setIframeError(true)}>
@@ -271,6 +291,13 @@ const App: FunctionComponent = () => {
       </section>
       <section id="Slide8">
         <h2 className="underline title">Ouverture:</h2>
+        <blockquote style={{ borderRadius: "10px" }}>
+          <cite>"Les inégalités entre les Hommes"</cite>
+        </blockquote>
+        <div>
+          <img data-src="/IMG/Global/conclu1.png" alt="" />
+          <img data-src="/IMG/Global/conclu2.png" alt="" />
+        </div>
       </section>
     </main>
   );

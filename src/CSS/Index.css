@@ -193,4 +193,20 @@
 #Slide5 #Slide5-metoo p {
   font-size: 1rem;
 }
+
+#Slide8 > div {
+  display: -ms-grid !important;
+  display: grid !important;
+  -ms-grid-columns: (1fr)[2] !important;
+      grid-template-columns: repeat(2, 1fr) !important;
+  place-items: center !important;
+}
+
+#Slide8 > div p {
+  font-size: 1rem;
+}
+
+#Slide8 img {
+  width: 300px;
+}
 /*# sourceMappingURL=Index.css.map */
